@@ -40,6 +40,8 @@
             this.barLinkContainerItem1 = new DevExpress.XtraBars.BarLinkContainerItem();
             this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
             this.SkinsLink = new DevExpress.XtraBars.BarLinkContainerItem();
+            this.digital_clock = new System.Windows.Forms.Label();
+            this.timer_clock = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -144,17 +146,33 @@
             this.SkinsLink.Id = 3;
             this.SkinsLink.Name = "SkinsLink";
             // 
+            // digital_clock
+            // 
+            this.digital_clock.AutoSize = true;
+            this.digital_clock.Font = new System.Drawing.Font("Tahoma", 45F, System.Drawing.FontStyle.Bold);
+            this.digital_clock.Location = new System.Drawing.Point(560, 178);
+            this.digital_clock.Name = "digital_clock";
+            this.digital_clock.Size = new System.Drawing.Size(302, 72);
+            this.digital_clock.TabIndex = 4;
+            this.digital_clock.Text = "00:00:00";
+            // 
+            // timer_clock
+            // 
+            this.timer_clock.Interval = 1000;
+            this.timer_clock.Tick += new System.EventHandler(this.timer_clock_Tick);
+            // 
             // XtraForm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(891, 553);
+            this.Controls.Add(this.digital_clock);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.Name = "XtraForm1";
-            this.Text = "XtraForm1";
+            this.Text = "Kalkulator z zegarem";
             this.Load += new System.EventHandler(this.XtraForm1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             this.ResumeLayout(false);
@@ -175,5 +193,7 @@
         private DevExpress.XtraBars.BarLinkContainerItem SkinsLink;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.XtraBars.BarLinkContainerItem barLinkContainerItem1;
+        private System.Windows.Forms.Label digital_clock;
+        private System.Windows.Forms.Timer timer_clock;
     }
 }

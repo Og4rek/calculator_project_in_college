@@ -22,6 +22,12 @@ namespace calculator_ASL
         private void XtraForm1_Load(object sender, EventArgs e)
         {
             SkinHelper.InitSkinPopupMenu(SkinsLink);
+            timer_clock.Start();
+        }
+
+        private void timer_clock_Tick(object sender, EventArgs e)
+        {
+            digital_clock.Text = DateTime.Now.ToString("T");
         }
     }
 }
