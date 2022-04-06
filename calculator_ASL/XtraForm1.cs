@@ -29,5 +29,25 @@ namespace calculator_ASL
         {
             digital_clock.Text = DateTime.Now.ToString("T");
         }
+
+        private void combo_color_clock_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int selected = combo_color_clock.SelectedIndex;
+            switch (selected)
+            {
+                case 0:
+                    digital_clock.ForeColor = System.Drawing.Color.Black;
+                    break;
+                case 1:
+                    digital_clock.ForeColor = System.Drawing.Color.Red;
+                    break;
+                case 2:
+                    digital_clock.ForeColor = System.Drawing.Color.Blue;
+                    break;
+                case 3:
+                    digital_clock.ForeColor = System.Drawing.Color.White;
+                    break;
+            }
+        }
     }
 }

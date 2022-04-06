@@ -42,7 +42,11 @@
             this.SkinsLink = new DevExpress.XtraBars.BarLinkContainerItem();
             this.digital_clock = new System.Windows.Forms.Label();
             this.timer_clock = new System.Windows.Forms.Timer(this.components);
+            this.button_clock_change = new DevExpress.XtraEditors.SimpleButton();
+            this.label_color_clock = new System.Windows.Forms.Label();
+            this.combo_color_clock = new DevExpress.XtraEditors.ComboBoxEdit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.combo_color_clock.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // barManager1
@@ -161,11 +165,47 @@
             this.timer_clock.Interval = 1000;
             this.timer_clock.Tick += new System.EventHandler(this.timer_clock_Tick);
             // 
+            // button_clock_change
+            // 
+            this.button_clock_change.Location = new System.Drawing.Point(572, 381);
+            this.button_clock_change.Name = "button_clock_change";
+            this.button_clock_change.Size = new System.Drawing.Size(290, 23);
+            this.button_clock_change.TabIndex = 5;
+            this.button_clock_change.Text = "Zmien zegar na analogowy";
+            // 
+            // label_color_clock
+            // 
+            this.label_color_clock.AutoSize = true;
+            this.label_color_clock.Location = new System.Drawing.Point(569, 322);
+            this.label_color_clock.Name = "label_color_clock";
+            this.label_color_clock.Size = new System.Drawing.Size(110, 13);
+            this.label_color_clock.TabIndex = 6;
+            this.label_color_clock.Text = "Kolor czcionki zegara:";
+            // 
+            // combo_color_clock
+            // 
+            this.combo_color_clock.Location = new System.Drawing.Point(681, 319);
+            this.combo_color_clock.MenuManager = this.barManager1;
+            this.combo_color_clock.Name = "combo_color_clock";
+            this.combo_color_clock.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.combo_color_clock.Properties.Items.AddRange(new object[] {
+            "Czarny",
+            "Czerwony",
+            "Niebieski",
+            "Bialy"});
+            this.combo_color_clock.Size = new System.Drawing.Size(181, 20);
+            this.combo_color_clock.TabIndex = 7;
+            this.combo_color_clock.SelectedIndexChanged += new System.EventHandler(this.combo_color_clock_SelectedIndexChanged);
+            // 
             // XtraForm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(891, 553);
+            this.Controls.Add(this.combo_color_clock);
+            this.Controls.Add(this.label_color_clock);
+            this.Controls.Add(this.button_clock_change);
             this.Controls.Add(this.digital_clock);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
@@ -175,6 +215,7 @@
             this.Text = "Kalkulator z zegarem";
             this.Load += new System.EventHandler(this.XtraForm1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.combo_color_clock.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,5 +236,8 @@
         private DevExpress.XtraBars.BarLinkContainerItem barLinkContainerItem1;
         private System.Windows.Forms.Label digital_clock;
         private System.Windows.Forms.Timer timer_clock;
+        private DevExpress.XtraEditors.ComboBoxEdit combo_color_clock;
+        private System.Windows.Forms.Label label_color_clock;
+        private DevExpress.XtraEditors.SimpleButton button_clock_change;
     }
 }
