@@ -312,7 +312,7 @@
             this.simpleButton1.Size = new System.Drawing.Size(45, 45);
             this.simpleButton1.TabIndex = 17;
             this.simpleButton1.Text = "7";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton_Click);
             // 
             // simpleButton5
             // 
@@ -322,7 +322,8 @@
             this.simpleButton5.Name = "simpleButton5";
             this.simpleButton5.Size = new System.Drawing.Size(45, 45);
             this.simpleButton5.TabIndex = 21;
-            this.simpleButton5.Text = "x";
+            this.simpleButton5.Text = "*";
+            this.simpleButton5.Click += new System.EventHandler(this.simpleButton_click_operator);
             // 
             // simpleButton6
             // 
@@ -333,6 +334,7 @@
             this.simpleButton6.Size = new System.Drawing.Size(45, 45);
             this.simpleButton6.TabIndex = 22;
             this.simpleButton6.Text = "-";
+            this.simpleButton6.Click += new System.EventHandler(this.simpleButton_click_operator);
             // 
             // simpleButton7
             // 
@@ -343,6 +345,7 @@
             this.simpleButton7.Size = new System.Drawing.Size(45, 45);
             this.simpleButton7.TabIndex = 23;
             this.simpleButton7.Text = "+";
+            this.simpleButton7.Click += new System.EventHandler(this.simpleButton_click_operator);
             // 
             // simpleButton8
             // 
@@ -353,6 +356,7 @@
             this.simpleButton8.Size = new System.Drawing.Size(45, 45);
             this.simpleButton8.TabIndex = 24;
             this.simpleButton8.Text = "=";
+            this.simpleButton8.Click += new System.EventHandler(this.simpleButton_operator_action);
             // 
             // simpleButton9
             // 
@@ -363,6 +367,7 @@
             this.simpleButton9.Size = new System.Drawing.Size(45, 45);
             this.simpleButton9.TabIndex = 25;
             this.simpleButton9.Text = ",";
+            this.simpleButton9.Click += new System.EventHandler(this.simpleButton_Click);
             // 
             // simpleButton10
             // 
@@ -373,6 +378,7 @@
             this.simpleButton10.Size = new System.Drawing.Size(96, 45);
             this.simpleButton10.TabIndex = 26;
             this.simpleButton10.Text = "0";
+            this.simpleButton10.Click += new System.EventHandler(this.simpleButton_Click);
             // 
             // simpleButton11
             // 
@@ -383,6 +389,7 @@
             this.simpleButton11.Size = new System.Drawing.Size(45, 45);
             this.simpleButton11.TabIndex = 27;
             this.simpleButton11.Text = "3";
+            this.simpleButton11.Click += new System.EventHandler(this.simpleButton_Click);
             // 
             // simpleButton12
             // 
@@ -393,6 +400,7 @@
             this.simpleButton12.Size = new System.Drawing.Size(45, 45);
             this.simpleButton12.TabIndex = 28;
             this.simpleButton12.Text = "2";
+            this.simpleButton12.Click += new System.EventHandler(this.simpleButton_Click);
             // 
             // simpleButton13
             // 
@@ -403,6 +411,7 @@
             this.simpleButton13.Size = new System.Drawing.Size(45, 45);
             this.simpleButton13.TabIndex = 29;
             this.simpleButton13.Text = "1";
+            this.simpleButton13.Click += new System.EventHandler(this.simpleButton_Click);
             // 
             // simpleButton14
             // 
@@ -413,6 +422,7 @@
             this.simpleButton14.Size = new System.Drawing.Size(45, 45);
             this.simpleButton14.TabIndex = 30;
             this.simpleButton14.Text = "6";
+            this.simpleButton14.Click += new System.EventHandler(this.simpleButton_Click);
             // 
             // simpleButton15
             // 
@@ -423,6 +433,7 @@
             this.simpleButton15.Size = new System.Drawing.Size(45, 45);
             this.simpleButton15.TabIndex = 31;
             this.simpleButton15.Text = "5";
+            this.simpleButton15.Click += new System.EventHandler(this.simpleButton_Click);
             // 
             // simpleButton16
             // 
@@ -433,6 +444,7 @@
             this.simpleButton16.Size = new System.Drawing.Size(45, 45);
             this.simpleButton16.TabIndex = 32;
             this.simpleButton16.Text = "4";
+            this.simpleButton16.Click += new System.EventHandler(this.simpleButton_Click);
             // 
             // simpleButton17
             // 
@@ -443,6 +455,7 @@
             this.simpleButton17.Size = new System.Drawing.Size(45, 45);
             this.simpleButton17.TabIndex = 33;
             this.simpleButton17.Text = "9";
+            this.simpleButton17.Click += new System.EventHandler(this.simpleButton_Click);
             // 
             // simpleButton18
             // 
@@ -453,6 +466,7 @@
             this.simpleButton18.Size = new System.Drawing.Size(45, 45);
             this.simpleButton18.TabIndex = 34;
             this.simpleButton18.Text = "8";
+            this.simpleButton18.Click += new System.EventHandler(this.simpleButton_Click);
             // 
             // simpleButton19
             // 
@@ -463,6 +477,7 @@
             this.simpleButton19.Size = new System.Drawing.Size(90, 45);
             this.simpleButton19.TabIndex = 49;
             this.simpleButton19.Text = "x^y";
+            this.simpleButton19.Click += new System.EventHandler(this.simpleButton_click_operator);
             // 
             // simpleButton20
             // 
@@ -473,6 +488,7 @@
             this.simpleButton20.Size = new System.Drawing.Size(90, 45);
             this.simpleButton20.TabIndex = 48;
             this.simpleButton20.Text = "e^x";
+            this.simpleButton20.Click += new System.EventHandler(this.simpleButton_click_operator_one_value);
             // 
             // simpleButton21
             // 
@@ -483,6 +499,7 @@
             this.simpleButton21.Size = new System.Drawing.Size(90, 45);
             this.simpleButton21.TabIndex = 47;
             this.simpleButton21.Text = "sqrt(x,3)";
+            this.simpleButton21.Click += new System.EventHandler(this.simpleButton_click_operator_one_value);
             // 
             // simpleButton22
             // 
@@ -493,6 +510,7 @@
             this.simpleButton22.Size = new System.Drawing.Size(90, 45);
             this.simpleButton22.TabIndex = 46;
             this.simpleButton22.Text = "sqrt(x,y)";
+            this.simpleButton22.Click += new System.EventHandler(this.simpleButton_click_operator);
             // 
             // simpleButton23
             // 
@@ -503,6 +521,7 @@
             this.simpleButton23.Size = new System.Drawing.Size(90, 45);
             this.simpleButton23.TabIndex = 45;
             this.simpleButton23.Text = "ln";
+            this.simpleButton23.Click += new System.EventHandler(this.simpleButton_click_operator_one_value);
             // 
             // simpleButton24
             // 
@@ -513,6 +532,7 @@
             this.simpleButton24.Size = new System.Drawing.Size(90, 45);
             this.simpleButton24.TabIndex = 44;
             this.simpleButton24.Text = "cos";
+            this.simpleButton24.Click += new System.EventHandler(this.simpleButton_click_operator_one_value);
             // 
             // simpleButton25
             // 
@@ -523,6 +543,7 @@
             this.simpleButton25.Size = new System.Drawing.Size(90, 45);
             this.simpleButton25.TabIndex = 43;
             this.simpleButton25.Text = "tan";
+            this.simpleButton25.Click += new System.EventHandler(this.simpleButton_click_operator_one_value);
             // 
             // simpleButton26
             // 
@@ -533,6 +554,7 @@
             this.simpleButton26.Size = new System.Drawing.Size(90, 45);
             this.simpleButton26.TabIndex = 42;
             this.simpleButton26.Text = "e";
+            this.simpleButton26.Click += new System.EventHandler(this.simpleButton_click_operator_one_value);
             // 
             // simpleButton28
             // 
@@ -543,6 +565,7 @@
             this.simpleButton28.Size = new System.Drawing.Size(90, 45);
             this.simpleButton28.TabIndex = 40;
             this.simpleButton28.Text = "PI";
+            this.simpleButton28.Click += new System.EventHandler(this.simpleButton_click_operator_one_value);
             // 
             // simpleButton29
             // 
@@ -553,6 +576,7 @@
             this.simpleButton29.Size = new System.Drawing.Size(90, 45);
             this.simpleButton29.TabIndex = 39;
             this.simpleButton29.Text = "RAND";
+            this.simpleButton29.Click += new System.EventHandler(this.simpleButton_click_operator_one_value);
             // 
             // simpleButton30
             // 
@@ -562,7 +586,8 @@
             this.simpleButton30.Name = "simpleButton30";
             this.simpleButton30.Size = new System.Drawing.Size(90, 45);
             this.simpleButton30.TabIndex = 38;
-            this.simpleButton30.Text = "1/x";
+            this.simpleButton30.Text = "log_y";
+            this.simpleButton30.Click += new System.EventHandler(this.simpleButton_click_operator);
             // 
             // simpleButton31
             // 
@@ -573,6 +598,7 @@
             this.simpleButton31.Size = new System.Drawing.Size(90, 45);
             this.simpleButton31.TabIndex = 37;
             this.simpleButton31.Text = "log_10";
+            this.simpleButton31.Click += new System.EventHandler(this.simpleButton_click_operator_one_value);
             // 
             // simpleButton32
             // 
@@ -583,6 +609,7 @@
             this.simpleButton32.Size = new System.Drawing.Size(90, 45);
             this.simpleButton32.TabIndex = 36;
             this.simpleButton32.Text = "10^x";
+            this.simpleButton32.Click += new System.EventHandler(this.simpleButton_click_operator_one_value);
             // 
             // simpleButton33
             // 
@@ -593,6 +620,7 @@
             this.simpleButton33.Size = new System.Drawing.Size(90, 45);
             this.simpleButton33.TabIndex = 35;
             this.simpleButton33.Text = "x^3";
+            this.simpleButton33.Click += new System.EventHandler(this.simpleButton_click_operator_one_value);
             // 
             // simpleButton2
             // 
@@ -603,6 +631,7 @@
             this.simpleButton2.Size = new System.Drawing.Size(90, 45);
             this.simpleButton2.TabIndex = 50;
             this.simpleButton2.Text = "cosh";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton_click_operator_one_value);
             // 
             // simpleButton3
             // 
@@ -613,6 +642,7 @@
             this.simpleButton3.Size = new System.Drawing.Size(90, 45);
             this.simpleButton3.TabIndex = 51;
             this.simpleButton3.Text = "tanh";
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton_click_operator_one_value);
             // 
             // simpleButton4
             // 
@@ -663,6 +693,7 @@
             this.simpleButton36.Size = new System.Drawing.Size(45, 45);
             this.simpleButton36.TabIndex = 55;
             this.simpleButton36.Text = "+/-";
+            this.simpleButton36.Click += new System.EventHandler(this.simpleButton36_Click);
             // 
             // simpleButton37
             // 
@@ -673,6 +704,7 @@
             this.simpleButton37.Size = new System.Drawing.Size(45, 45);
             this.simpleButton37.TabIndex = 54;
             this.simpleButton37.Text = "%";
+            this.simpleButton37.Click += new System.EventHandler(this.simpleButton_click_operator);
             // 
             // simpleButton38
             // 
@@ -683,6 +715,7 @@
             this.simpleButton38.Size = new System.Drawing.Size(45, 45);
             this.simpleButton38.TabIndex = 53;
             this.simpleButton38.Text = "/";
+            this.simpleButton38.Click += new System.EventHandler(this.simpleButton_click_operator);
             // 
             // simpleButton39
             // 
@@ -693,6 +726,7 @@
             this.simpleButton39.Size = new System.Drawing.Size(45, 45);
             this.simpleButton39.TabIndex = 52;
             this.simpleButton39.Text = "AC";
+            this.simpleButton39.Click += new System.EventHandler(this.simpleButton39_Click);
             // 
             // simpleButton40
             // 
@@ -703,6 +737,7 @@
             this.simpleButton40.Size = new System.Drawing.Size(90, 45);
             this.simpleButton40.TabIndex = 64;
             this.simpleButton40.Text = "x!";
+            this.simpleButton40.Click += new System.EventHandler(this.simpleButton_click_operator_one_value);
             // 
             // simpleButton41
             // 
@@ -713,6 +748,7 @@
             this.simpleButton41.Size = new System.Drawing.Size(90, 45);
             this.simpleButton41.TabIndex = 63;
             this.simpleButton41.Text = "sinh";
+            this.simpleButton41.Click += new System.EventHandler(this.simpleButton_click_operator_one_value);
             // 
             // simpleButton42
             // 
@@ -723,6 +759,7 @@
             this.simpleButton42.Size = new System.Drawing.Size(90, 45);
             this.simpleButton42.TabIndex = 62;
             this.simpleButton42.Text = "sqrt(x)";
+            this.simpleButton42.Click += new System.EventHandler(this.simpleButton_click_operator_one_value);
             // 
             // simpleButton43
             // 
@@ -733,6 +770,7 @@
             this.simpleButton43.Size = new System.Drawing.Size(90, 45);
             this.simpleButton43.TabIndex = 61;
             this.simpleButton43.Text = "sin";
+            this.simpleButton43.Click += new System.EventHandler(this.simpleButton_click_operator_one_value);
             // 
             // simpleButton44
             // 
@@ -743,6 +781,7 @@
             this.simpleButton44.Size = new System.Drawing.Size(90, 45);
             this.simpleButton44.TabIndex = 60;
             this.simpleButton44.Text = "x^2";
+            this.simpleButton44.Click += new System.EventHandler(this.simpleButton_click_operator_one_value);
             // 
             // XtraForm1
             // 
@@ -809,6 +848,7 @@
             this.Name = "XtraForm1";
             this.Text = "Kalkulator z zegarem";
             this.Load += new System.EventHandler(this.XtraForm1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.XtraForm1_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.combo_color_clock.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.analog_clock_pic)).EndInit();
