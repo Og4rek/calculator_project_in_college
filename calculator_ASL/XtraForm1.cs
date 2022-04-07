@@ -57,6 +57,11 @@ namespace calculator_ASL
             }
         }
 
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void timer_clock_Tick(object sender, EventArgs e)
         {
             digital_clock.Text = DateTime.Now.ToString("T");
