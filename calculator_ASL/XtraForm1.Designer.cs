@@ -653,6 +653,7 @@
             this.simpleButton4.Size = new System.Drawing.Size(90, 45);
             this.simpleButton4.TabIndex = 59;
             this.simpleButton4.Text = "M+";
+            this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
             // 
             // simpleButton27
             // 
@@ -663,6 +664,7 @@
             this.simpleButton27.Size = new System.Drawing.Size(90, 45);
             this.simpleButton27.TabIndex = 58;
             this.simpleButton27.Text = "M-";
+            this.simpleButton27.Click += new System.EventHandler(this.simpleButton27_Click);
             // 
             // simpleButton34
             // 
@@ -673,6 +675,7 @@
             this.simpleButton34.Size = new System.Drawing.Size(90, 45);
             this.simpleButton34.TabIndex = 57;
             this.simpleButton34.Text = "MR";
+            this.simpleButton34.Click += new System.EventHandler(this.simpleButton34_Click);
             // 
             // simpleButton35
             // 
@@ -683,6 +686,7 @@
             this.simpleButton35.Size = new System.Drawing.Size(90, 45);
             this.simpleButton35.TabIndex = 56;
             this.simpleButton35.Text = "MC";
+            this.simpleButton35.Click += new System.EventHandler(this.simpleButton35_Click);
             // 
             // simpleButton36
             // 

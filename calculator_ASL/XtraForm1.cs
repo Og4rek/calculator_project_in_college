@@ -16,6 +16,7 @@ namespace calculator_ASL
     {
         Bitmap back, hour, minute, second;
         Double result_value = 0;
+        Double memory = 0;
         String operation_performed = "";
         Boolean is_operation_performed = false;
         Boolean is_operation_simply_performed = false;
@@ -185,16 +186,16 @@ namespace calculator_ASL
             switch (operation_performed)
             {
                 case "10^x":
-                    this.text_box.Text = Math.Pow(10, result_value).ToString();
+                    text_box.Text = Math.Pow(10, result_value).ToString();
                     break;
                 case "e^x":
-                    this.text_box.Text = Math.Pow(Math.E, result_value).ToString();
+                    text_box.Text = Math.Pow(Math.E, result_value).ToString();
                     break;
                 case "x^3":
-                    this.text_box.Text = Math.Pow(result_value, 3).ToString();
+                    text_box.Text = Math.Pow(result_value, 3).ToString();
                     break;
                 case "x^2":
-                    this.text_box.Text = Math.Pow(result_value, 2).ToString();
+                    text_box.Text = Math.Pow(result_value, 2).ToString();
                     break;
                 case "x!":
                     double n = result_value;
@@ -204,47 +205,47 @@ namespace calculator_ASL
                         res = res * n;
                         n = n - 1;
                     }
-                    this.text_box.Text = res.ToString();
+                    text_box.Text = res.ToString();
                     break;
                 case "ln":
-                    this.text_box.Text = Math.Log(result_value).ToString();
+                    text_box.Text = Math.Log(result_value).ToString();
                     break;
                 case "log_10":
-                    this.text_box.Text = Math.Log(result_value, 10).ToString();
+                    text_box.Text = Math.Log(result_value, 10).ToString();
                     break;
                 case "sqrt(x)":
-                    this.text_box.Text = Math.Sqrt(result_value).ToString();
+                    text_box.Text = Math.Sqrt(result_value).ToString();
                     break;
                 case "sqrt(x,3)":
-                    this.text_box.Text = Math.Pow(result_value, 1.0 / 3.0).ToString();
+                    text_box.Text = Math.Pow(result_value, 1.0 / 3.0).ToString();
                     break;
                 case "e":
-                    this.text_box.Text = Math.E.ToString();
+                    text_box.Text = Math.E.ToString();
                     break;
                 case "Pi":
-                    this.text_box.Text = Math.PI.ToString();
+                    text_box.Text = Math.PI.ToString();
                     break;
                 case "sin":
-                    this.text_box.Text = Math.Sin(radians).ToString();
+                    text_box.Text = Math.Sin(radians).ToString();
                     break;
                 case "cos":
-                    this.text_box.Text = Math.Cos(radians).ToString();
+                    text_box.Text = Math.Cos(radians).ToString();
                     break;
                 case "tan":
-                    this.text_box.Text = Math.Tan(radians).ToString();
+                    text_box.Text = Math.Tan(radians).ToString();
                     break;
                 case "sinh":
-                    this.text_box.Text = Math.Sinh(radians).ToString();
+                    text_box.Text = Math.Sinh(radians).ToString();
                     break;
                 case "cosh":
-                    this.text_box.Text = Math.Cosh(radians).ToString();
+                    text_box.Text = Math.Cosh(radians).ToString();
                     break;
                 case "tanh":
-                    this.text_box.Text = Math.Tanh(radians).ToString();
+                    text_box.Text = Math.Tanh(radians).ToString();
                     break;
                 case "RAND":
                     Random rnd = new Random();
-                    this.text_box.Text = rnd.Next().ToString();
+                    text_box.Text = rnd.Next().ToString();
                     break;
                 default:
                     break;
@@ -287,6 +288,34 @@ namespace calculator_ASL
                     simpleButton10.PerformClick();
                     break;
             }
+        }
+
+        // MC
+        private void simpleButton35_Click(object sender, EventArgs e)
+        {
+            memory = 0;
+            is_operation_performed = true;
+        }
+
+        // M+
+        private void simpleButton4_Click(object sender, EventArgs e)
+        {
+            memory = memory + Double.Parse(text_box.Text);
+            is_operation_performed = true;
+        }
+
+        // M-
+        private void simpleButton27_Click(object sender, EventArgs e)
+        {
+            memory = memory - Double.Parse(text_box.Text);
+            is_operation_performed = true;
+        }
+
+        // MR
+        private void simpleButton34_Click(object sender, EventArgs e)
+        {
+            text_box.Text = memory.ToString();
+            is_operation_performed = true;
         }
 
         // timer tick action (change time and rotation of image)
